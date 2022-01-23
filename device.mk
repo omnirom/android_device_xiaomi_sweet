@@ -14,6 +14,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/sweet/sweet-vendor.mk)
 
+# Camera
+$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
+
 # The first api level, device has been commercially launched on.
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -37,10 +40,6 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbluetooth_qti
-
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
 
 # Device Settings
 PRODUCT_PACKAGES += \

@@ -78,4 +78,7 @@
         <item>0</item>
         <item>0</item>
     </integer-array>
+
+    <!-- Charging ripple -->
+    <bool name="flag_charging_ripple">true</bool>
 </resources>

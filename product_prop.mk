@@ -16,6 +16,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=440
 
+# Dialer
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.vendor.radio.redir_party_num=0
+
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \

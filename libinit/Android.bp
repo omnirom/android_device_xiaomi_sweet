@@ -17,11 +17,12 @@ cc_library_static {
     name: "libinit_sweet",
     srcs: ["init_sweet.cpp"],
     recovery_available: true,
+    ramdisk_available: true,
     include_dirs: [
         "system/libbase/include",
         "system/core/init"
     ],
-    shared_libs: [
+    static_libs: [
         "libbase",
         "libfs_mgr",
     ],

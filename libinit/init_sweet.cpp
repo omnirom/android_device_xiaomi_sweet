@@ -36,9 +36,11 @@
 #include <sys/_system_properties.h>
 
 #include "property_service.h"
-#include "vendor_init.h"
 
 #include <fs_mgr_dm_linear.h>
+
+namespace android {
+namespace init {
 
 using android::base::GetProperty;
 
@@ -94,3 +96,5 @@ void vendor_load_properties() {
     android::fs_mgr::CreateLogicalPartitions("/dev/block/by-name/super");
 #endif
 }
+} // init
+} // android

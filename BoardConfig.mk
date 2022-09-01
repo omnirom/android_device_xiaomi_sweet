@@ -45,11 +45,15 @@ BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 3289846
-TARGET_KERNEL_CONFIG := sweet_user_defconfig
+TARGET_KERNEL_CLANG_VERSION := playground
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-playground
+TARGET_KERNEL_CONFIG := sweet_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld"
+TARGET_KERNEL_ADDITIONAL_FLAGS += AS=llvm-as AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump \
+                                  STRIP=llvm-strip LD=ld.lld LLVM=1 LLVM_IAS=1
+KERNEL_SUPPORTS_LLVM_TOOLS := true
 
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504

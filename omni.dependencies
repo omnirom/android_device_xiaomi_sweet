@@ -78,6 +78,12 @@
      "revision": "android-13.0"
    },
   {
+    "remote": "omnirom",
+    "repository": "vendor_qcom_opensource_dataservices",
+    "target_path": "vendor/qcom/opensource/dataservices",
+    "revision": "android-11"
+  },
+  {
     "remove": "platform/hardware/qcom/gps"
   }
 ]

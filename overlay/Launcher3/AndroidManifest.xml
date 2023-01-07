@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    <application android:hasCode="false" />
+    package="com.android.launcher3.overlay.xiaomi_sweet">
+    <overlay android:targetPackage="com.android.launcher3" android:isStatic="true" />
+</manifest>

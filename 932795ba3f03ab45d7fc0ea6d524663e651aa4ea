@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f553b6f3_c15fb007",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1002322
+      },
+      "writtenOn": "2023-01-25T03:23:23Z",
+      "side": 1,
+      "message": "move this flag into device.mk because need to set early",
+      "revId": "932795ba3f03ab45d7fc0ea6d524663e651aa4ea",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55"
+    }
+  ]
+}

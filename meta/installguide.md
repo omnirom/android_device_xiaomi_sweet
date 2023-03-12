@@ -3,7 +3,7 @@
 Download the latest update according to your choice.  
 [weekly](https://dl.omnirom.org/sweet/), no GApps included  
 [GApps](https://dl.omnirom.org/tmp/sweet/)  
-[MicorG](https://dl.omnirom.org/sweet/)  
+[microG](https://dl.omnirom.org/sweet/)  
 
 Flash [this recovery](https://sourceforge.net/projects/sweet-12/files/ROMS/OmniROM/twrp-3.6.1_11-0-sweet.img/download) by rebooting to bootloader  
 adb reboot bootloader  
